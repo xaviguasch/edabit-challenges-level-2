@@ -1,15 +1,17 @@
 function joinPath(portion1, portion2) {
-  if (portion1.endsWith('/') && portion2.startsWith('/')) {
-    const newPortion1 = portion1.split('')
+  // if (portion1.endsWith('/') && portion2.startsWith('/')) {
+  //   const newPortion1 = portion1.split('')
 
-    newPortion1.splice(newPortion1.length - 1)
+  //   newPortion1.splice(newPortion1.length - 1)
 
-    return [newPortion1.join(''), portion2].join('')
-  } else if (portion1.endsWith('/') || portion2.startsWith('/')) {
-    return [portion1, portion2].join('')
-  } else {
-    return [portion1, portion2].join('/')
-  }
+  //   return [newPortion1.join(''), portion2].join('')
+  // } else if (portion1.endsWith('/') || portion2.startsWith('/')) {
+  //   return [portion1, portion2].join('')
+  // } else {
+  //   return [portion1, portion2].join('/')
+  // }
+
+  return `${portion1.replace('/', '')}/${portion2.replace('/', '')}`
 }
 
 console.log(joinPath('portion1/', '/portion2'))
