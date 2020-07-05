@@ -1,4 +1,9 @@
-function whichIsLarger(f, g) {}
+function whichIsLarger(f, g) {
+  const funcF = f()
+  const funcG = g()
+
+  return funcF > funcG ? 'f' : funcF === funcG ? 'neither' : 'g'
+}
 
 console.log(
   whichIsLarger(
