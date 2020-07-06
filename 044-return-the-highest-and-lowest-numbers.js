@@ -1,4 +1,10 @@
-function highLow(str) {}
+function highLow(str) {
+  const arrNums = str.split(' ')
+
+  const finalArr = arrNums.map((num) => Number(num)).sort((a, b) => b - a)
+
+  return `${finalArr[0]} ${finalArr[finalArr.length - 1]}`
+}
 
 console.log(highLow('1 2 -3 4 5'))
 console.log(highLow('13'))
