@@ -1,0 +1,5 @@
+function doubleChar(str) {}
+
+// Create a function that takes a string and returns a string in which each character is repeated once.
+
+console.log(doubleChar('Hello World!'))
