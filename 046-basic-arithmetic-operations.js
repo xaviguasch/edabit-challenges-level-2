@@ -7,4 +7,8 @@ function operation(a, b, op) {
 
 // The numbers and operation are given as a string and should result to an integer value.
 
+// The numbers and operation are given as a string and should result to an integer value.
+// If the operation results to Infinity, then return "undefined" (e.g. division by zero).
+// Division results will be rounded down to its integral part.
+
 console.log(operation('1', '2', 'add'))
